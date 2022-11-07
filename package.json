@@ -4,7 +4,8 @@
   "description": "[![Actions Status](https://github.com/student-Alex-Bond/layout-designer-project-59/workflows/hexlet-check/badge.svg)](https://github.com/student-Alex-Bond/layout-designer-project-59/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "npx gulp develop",
+    "build": "npx gulp build"
   },
   "repository": {
     "type": "git",
