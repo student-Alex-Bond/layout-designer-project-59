@@ -1,0 +1,37 @@
+-
+  let chatsList = {
+    "1": [{
+      name: "Вениамин Редакторович",
+      time: "11:45",
+      message: "o_O",
+      avatar: "./imgs/avatar_4.jpg"
+    }],
+
+    "2": [{
+      name: "Джедай Падаванов",
+      time: "10:12",
+      message: "Привет, скоро третий проект? Уже скоро надо будет выложить.",
+      avatar: "./imgs/avatar_2.jpg"
+    }],
+
+    "3": [{
+      name: "Алексей Примадонин",
+      time: "08:53",
+      message: "Тесты упали >_<",
+      avatar: "./imgs/avatar_3.jpg"
+    }],
+  }
+
+  titleAndFind = {
+    formName: "Чаты", 
+    formText: "Поиск по сообщениям"
+  }
+
+if toggler == "index"
+  div(class="bg-white px-4 pt-5 tab-pane fade overflow-list overflow-list-left-md" id="chats" role="tabpanel" aria-labelledby="chats-tab")
+    include titleAndFind.pug
+    include chatsList.pug
+else
+  div(class="bg-white px-4 pt-5 tab-pane fade show active overflow-list overflow-list-left-md" id="chats" role="tabpanel" aria-labelledby="chats-tab")
+    include titleAndFind.pug
+    include chatsList.pug

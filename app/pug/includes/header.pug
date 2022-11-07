@@ -1,0 +1,28 @@
+header(class="bg-primary-custom rounded-topstart-md py-4 ps-3 text-light-custom small")
+  nav(class="d-flex justify-content-between align-items-center")
+    a(href='https://ru.hexlet.io')
+      p.visually-hidden Хекслет
+      svg(class="icon-small-white")
+        use(xlink:href="./imgs/sprite/sprite.svg#logo")
+    ul(class="d-flex justify-content-between list-unstyled mb-0 nav me-5" id="myTab" role="tablist")
+      if toggler == "chat"
+        li(class="nav-item me-2r d-md-none" role="presentation")
+          a(href="#current-chat" class="nav-link p-0 text-light-custom" id="current-chat-tab" role="tab" data-bs-toggle="tab" aria-controls="current-chat" aria-selected="false")
+            svg(class="icon-small")
+              use(xlink:href="./imgs/sprite/sprite.svg#chat-left-text")
+            span(class="d-none d-md-inline ms-1") К сообщениям
+      li(class="nav-item me-2r" role="presentation")
+        a(href="#contacts" class="nav-link p-0 text-light-custom" id="contacts-tab" role="tab" data-bs-toggle="tab" aria-controls="contacts" aria-selected="true")
+          svg(class="icon-small")
+            use(xlink:href="./imgs/sprite/sprite.svg#people")
+          span(class="d-none d-md-inline ms-1") Контакты
+      li(class="nav-item me-2r" role="presentation")
+        a(href="#chats" class="nav-link p-0 text-light-custom" id="chats-tab" role="tab" data-bs-toggle="tab" aria-controls="chats" aria-selected="false")
+          svg(class="icon-small")
+            use(xlink:href="./imgs/sprite/sprite.svg#chat")
+          span(class="d-none d-md-inline ms-1") Сообщения
+      li(class="nav-item" role="presentation")
+        a(href="#profile" class="nav-link p-0 text-light-custom" id="profile-tab" role="tab" data-bs-toggle="tab" aria-controls="profile" aria-selected="false")
+          svg(class="icon-small")
+            use(xlink:href="./imgs/sprite/sprite.svg#person")
+          span(class="d-none d-md-inline ms-1") Профиль

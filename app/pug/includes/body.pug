@@ -1,0 +1,22 @@
+body
+    h1.visually-hidden Hexlet Chat Mesenger
+    main(class="container-fluid container-xxl p-0 p-md-4 h-100 bg-gray-custom")
+      div(class="row g-0 radius-md bg-white h-100 overflow-hidden")
+        div(class="col-12 col-md-4 p-0 m-0 d-flex flex-column h-100 overflow-hidden")
+          div.order-header
+            include header.pug
+          div(class="order-left tab-content" id="myTabContent")
+            if toggler == "index"
+              include contacts.pug
+              include chats.pug
+              include profile.pug
+            else
+              include chats.pug
+              include contacts.pug
+              include profile.pug
+              include messages.pug
+        div(class="col-md-8 d-none d-md-block border-start border-gray-base p-0 vh-100")
+          if toggler == "index"
+            include hello.pug
+          else
+            include chatMessages.pug

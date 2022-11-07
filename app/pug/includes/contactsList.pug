@@ -1,0 +1,10 @@
+ul(class="list-group")
+  each persons, letter in contacts
+    li(class="list-item list-unstyled mb-3")
+      p(class="text-muted mt-5")= letter
+      each person in persons
+        a(href="#" class="list-group-item-action action-on-contact d-flex text-decoration-none p-3 shadow-sm border-top-0")
+          img.avatar(src= person.avatar)
+          div(class="d-flex flex-column ps-4")
+            p(class="fw-bold text-dark m-0")= person.name
+            p(class="small text-secondary m-0")= person.status

@@ -1,0 +1,61 @@
+-
+  chatMessages = {
+    "1": {
+      name: "Вениамин Редакторович",
+      status: "8 минут назад",
+      avatar: "imgs/avatar_4.jpg",
+      message: "Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?",
+    },
+    "2": {
+      name: "none",
+      status: "5 минут назад",
+      avatar: "imgs/avatar_1.jpg",
+      message: "Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
+    },
+    "3": {
+      name: "Вениамин Редакторович",
+      status: "5 минут назад",
+      avatar: "imgs/avatar_4.jpg",
+      message: "Лады",
+    },
+    "4": {
+      name: "none",
+      status: "3 минуты назад",
+      avatar: "imgs/avatar_1.jpg",
+      message: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
+    },
+    "5": {
+      name: "Вениамин Редакторович",
+      status: "Только что",
+      avatar: "imgs/avatar_4.jpg",
+      message: "о_О",
+    },
+  }
+
+div(class="position-sticky d-flex align-items-center bg-white border-bottom shadow-none ps-3 radius-right-top-md")
+    img.avatar(src="./imgs/avatar_4.jpg")
+    div(class="p-4  d-flex flex-column")
+      p(class="fw-bold m-0") Вениамин Редакторович
+      p(class="m-0 small text-muted") Онлайн
+div(class="container-fluid overflow-list-right-mobile overflow-list-right-desktop-md p-5")
+  each messageBlock, index in chatMessages
+    if messageBlock.name == "none"
+      div(class="row mb-3 justify-content-end")
+        div(class="col-12 col-md-9 d-flex align-items-end")
+          img(src= messageBlock.avatar class="avatar me-3 d-none d-md-block")
+          div
+            div(class="bg-primary-custom shadow-sm radius p-4 w-100 w-md-auto")
+              p(class="pb-2 m-0 border-bottom text-light-custom")= messageBlock.message
+              p(class="pt-1 m-0 small text-light-custom")= messageBlock.status
+            div
+    else
+      div(class="row mb-3 justify-content-start")
+        div(class="col-12 col-md-9 d-flex align-items-end")
+          img(src= messageBlock.avatar class="avatar me-3 d-none d-md-block")
+          div
+            div(class="bg-light-custom shadow-sm radius p-4 w-100 w-md-auto")
+              p(class="pb-2 m-0 text-dark fw-bold")= messageBlock.name
+              p(class="pb-1 pb-md-2 m-0 text-secondary border-bottom")= messageBlock.message
+              p(class="pt-1 m-0 small text-secondary")= messageBlock.status
+            div
+include feedback.pug

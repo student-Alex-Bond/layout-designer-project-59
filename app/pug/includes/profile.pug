@@ -1,0 +1,45 @@
+-
+  let userData = {
+    "country": [{
+      description: "Страна",
+      content: "Москва, Россия",
+      icon: "./imgs/sprite/sprite.svg#globe",
+    }],
+    "phone": [{
+      description: "Телефон",
+      content: "+7 (499) 123-45-67",
+      icon: "./imgs/sprite/sprite.svg#phone",
+    }],
+    "email": [{
+      description: "Email",
+      content: "nikita.m@hexlet.io",
+      icon: "./imgs/sprite/sprite.svg#message",
+    }],
+    "twitter": [{
+      description: "Twitter",
+      content: "@n__mikhaylov",
+      icon: "./imgs/sprite/sprite.svg#people",
+    }],
+  }
+
+  titleAndFind = {
+    formName: "Профиль", 
+    formText: "Поиск по сообщениям"
+  }
+
+div(class="bg-white px-4 pt-5 tab-pane fade overflow-list overflow-list-left-md" id="profile" role="tabpanel" aria-labelledby="profile-tab")
+  include titleAndFind.pug
+  div(class="d-flex flex-column align-items-center justify-content-start p-3 mt-5 mb-3")
+    img(src="imgs/avatar_1.jpg" class="profile-avatar mb-3 mt-3 d-block")
+    h6(class="fw-bold text-dark mb-4") Кодовёнок Хекслетович
+    p(class="small text-muted text-center mb-0") Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+  ul(class="list-group py-3")
+    each datas, index in userData
+      each data in datas
+        li(class="list-item list-unstyled")
+          div(class="p-3 d-flex shadow-sm border-top-0 justify-content-between")
+            div(class="d-flex flex-column")
+              p(class="small text-muted m-0")= data.description
+              p(class="small text-dark m-0")= data.content
+            svg(class="icon-small-profile text-black-50")
+              use(xlink:href= data.icon)

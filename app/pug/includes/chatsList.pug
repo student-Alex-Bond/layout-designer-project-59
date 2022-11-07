@@ -1,0 +1,11 @@
+ul(class="list-group mt-5")
+  each persons, index in chatsList
+    each person in persons
+      li(class="list-item list-unstyled action-on-chat mb-0 mb-md-3")
+        a(href="#" class="list-group-item-action d-flex justify-content-between align-items-center text-decoration-none p-3 shadow-sm border-top-0 action-on-link")
+          img.avatar(src= person.avatar)  
+          div(class="d-flex flex-column flex-grow-1 overflow-hidden text-truncate p-2")
+            div(class="d-flex justify-content-between")
+              p(class="fw-bold text-dark m-0")= person.name
+              p(class="small text-secondary m-0")=person.time
+            p(class="small text-secondary m-0")= person.message

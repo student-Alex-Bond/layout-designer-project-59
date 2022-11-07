@@ -1,0 +1,51 @@
+-
+  let contacts = {
+    "A": [{
+      name: "Алексей Примадонин",
+      status: "Онлайн",
+      avatar: "./imgs/avatar_3.jpg"
+    }],
+
+    "В": [{
+      name: "Вениамин Редакторович",
+      status: "Онлайн",
+      avatar: "./imgs/avatar_4.jpg"
+    }],
+
+    "Д": [{
+      name: "Джедай Падаванов",
+      status: "Был онлайн вчера",
+      avatar: "./imgs/avatar_2.jpg"
+    }],
+
+    "К": [{
+      name: "Кодовёнок Хекслетович",
+      status: "Был онлайн 3 часа назад",
+      avatar: "./imgs/avatar_1.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      status: "Была онлайн вчера",
+      avatar: "./imgs/avatar_5.jpg"
+    }],
+
+    "П": [{
+      name: "Питонист Джангович",
+      status: "Был онлайн вчера",
+      avatar: "./imgs/avatar_6.jpg"
+    }],
+  }
+
+  titleAndFind = {
+    formName: "Контакты", 
+    formText: "Поиск по контактам"
+  }
+
+if toggler == "index"
+  div(class="bg-white px-4 pt-5 tab-pane fade show active overflow-list overflow-list-left-md" id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
+    include titleAndFind.pug
+    include contactsList.pug
+else
+  div(class="bg-white px-4 pt-5 tab-pane fade overflow-list overflow-list-left-md" id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
+    include titleAndFind.pug
+    include contactsList.pug
