@@ -1,0 +1,30 @@
+{
+  "name": "layout-designer-project-59",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/student-Alex-Bond/layout-designer-project-59/workflows/hexlet-check/badge.svg)](https://github.com/student-Alex-Bond/layout-designer-project-59/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/student-Alex-Bond/layout-designer-project-59.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/student-Alex-Bond/layout-designer-project-59/issues"
+  },
+  "homepage": "https://github.com/student-Alex-Bond/layout-designer-project-59#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}
