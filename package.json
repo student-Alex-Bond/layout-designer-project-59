@@ -26,6 +26,22 @@
     "gulp-svg-sprite": "^2.0.0"
   },
   "devDependencies": {
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1",
+    "sass": "^1.54.9",
+    "stylelint": "^14.12.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
