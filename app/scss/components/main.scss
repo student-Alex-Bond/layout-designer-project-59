@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+
+  overflow-y: hidden;
+}
+
+.br-1 {
+  border-radius: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .br-1 {
+    border-radius: 1rem;
+  }
+}
+
+.order-header {
+  order: 2;
+}
+
+@include media-breakpoint-up(md) {
+  .order-header {
+    order: 1;
+  }
+}
+
+.order-left {
+  order: 1;
+}
+
+@include media-breakpoint-up(md) {
+  .order-left {
+    order: 2;
+  }
+}
+
+.border-bottom-light {
+  border-bottom: 1px solid $light-custom;
+}
+
+.btn-circle-small {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+}

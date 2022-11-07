@@ -1,0 +1,41 @@
+$gray-custom: #efefef;
+$primary-custom: #4545a5;
+$light-custom: #fbfbfb;
+$theme-colors: (
+  "gray-custom": $gray-custom,
+  "primary-custom": $primary-custom,
+  "light-custom": $light-custom,
+  "secondary":  #6c757d,
+  "success":    #28a745,
+  "info":       #17a2b8,
+  "warning":    #ffc107,
+  "danger":     #dc3545,
+  "dark":       #343a40,
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1540px
+);
+$enable-shadows: true;
+$sides: (
+  "all",
+  "top",
+  "bottom",
+  "left",
+  "rigth",
+);
+$header-height-desktop: 8rem;
+$header-height-mobile: 4.5rem;
+$chat-header-height-desktop: 15rem;
+$chat-header-height-mobile: 15rem;
